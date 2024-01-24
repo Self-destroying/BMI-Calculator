@@ -1,0 +1,513 @@
+@import url("https://fonts.cdnfonts.com/css/hey-comic");
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+body , html{
+  cursor: url('image/cursor.png'), auto;	
+}
+.background {
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #010029;
+  overflow: hidden;
+}
+
+.background span {
+  width: 16vmin;
+  height: 16vmin;
+  border-radius: 16vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.background span:nth-child(0) {
+  color: #ea8d0b;
+  top: 65%;
+  left: 74%;
+  animation-duration: 51s;
+  animation-delay: -47s;
+  transform-origin: -3vw 11vh;
+  box-shadow: -32vmin 0 4.3719624896912vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #f5c96b;
+  top: 56%;
+  left: 10%;
+  animation-duration: 49s;
+  animation-delay: -8s;
+  transform-origin: 24vw -6vh;
+  box-shadow: 32vmin 0 4.189087818519078vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #8abdf4;
+  top: 3%;
+  left: 85%;
+  animation-duration: 6s;
+  animation-delay: -14s;
+  transform-origin: -1vw -1vh;
+  box-shadow: -32vmin 0 4.769647451575747vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #ea8d0b;
+  top: 74%;
+  left: 88%;
+  animation-duration: 43s;
+  animation-delay: -4s;
+  transform-origin: 22vw -16vh;
+  box-shadow: 32vmin 0 4.815120347974161vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #f5c96b;
+  top: 89%;
+  left: 20%;
+  animation-duration: 51s;
+  animation-delay: -40s;
+  transform-origin: -14vw 1vh;
+  box-shadow: 32vmin 0 4.843442011291078vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #ea8d0b;
+  top: 29%;
+  left: 22%;
+  animation-duration: 24s;
+  animation-delay: -5s;
+  transform-origin: 6vw -6vh;
+  box-shadow: -32vmin 0 4.044556592727822vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #8abdf4;
+  top: 26%;
+  left: 32%;
+  animation-duration: 30s;
+  animation-delay: -17s;
+  transform-origin: -16vw 3vh;
+  box-shadow: 32vmin 0 4.321902387490479vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #f5c96b;
+  top: 62%;
+  left: 96%;
+  animation-duration: 18s;
+  animation-delay: -46s;
+  transform-origin: 9vw -22vh;
+  box-shadow: -32vmin 0 4.561706085542035vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #ea8d0b;
+  top: 10%;
+  left: 30%;
+  animation-duration: 20s;
+  animation-delay: -42s;
+  transform-origin: 2vw -20vh;
+  box-shadow: 32vmin 0 4.857459578126356vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #f5c96b;
+  top: 34%;
+  left: 28%;
+  animation-duration: 11s;
+  animation-delay: -29s;
+  transform-origin: 16vw -23vh;
+  box-shadow: 32vmin 0 4.13435052824617vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: #f5c96b;
+  top: 5%;
+  left: 92%;
+  animation-duration: 13s;
+  animation-delay: -2s;
+  transform-origin: -9vw 4vh;
+  box-shadow: 32vmin 0 4.842854391603961vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: #ea8d0b;
+  top: 34%;
+  left: 18%;
+  animation-duration: 31s;
+  animation-delay: -42s;
+  transform-origin: -13vw 12vh;
+  box-shadow: 32vmin 0 4.593389757537164vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: #ea8d0b;
+  top: 11%;
+  left: 68%;
+  animation-duration: 13s;
+  animation-delay: -34s;
+  transform-origin: -3vw -2vh;
+  box-shadow: -32vmin 0 4.2215324797064575vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: #f5c96b;
+  top: 50%;
+  left: 27%;
+  animation-duration: 51s;
+  animation-delay: -37s;
+  transform-origin: 12vw 14vh;
+  box-shadow: 32vmin 0 4.593709339249404vmin currentColor;
+}
+.background span:nth-child(14) {
+  color: #8abdf4;
+  top: 90%;
+  left: 50%;
+  animation-duration: 48s;
+  animation-delay: -30s;
+  transform-origin: 12vw 22vh;
+  box-shadow: -32vmin 0 4.958411052976441vmin currentColor;
+}
+
+/* start style for form background */
+#back {
+  width: 75%;
+  opacity: 95%;
+  height: 646px;
+  margin: 2% auto;
+  border-radius: 26px;
+  background: #181f32;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+#back > form {
+  width: 33%;
+  height: 670px;
+  border-radius: 23px;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.196);
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.25);
+}
+#back > form > h1 {
+  font-family: "Hey Comic", sans-serif;
+  text-align: center;
+  color: #d6c9c9;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 22%;
+  margin-top: 9%;
+}
+#back > form > h3 {
+  margin-bottom: 5%;
+  font-family: "Hey Comic", sans-serif;
+  color: #ded6d6;
+  font-family: "Hey Comic";
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.44px;
+}
+#image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 12%;
+}
+#image > img:first-child {
+  margin-right: 10%;
+  cursor: url('image/vector.png'), auto;	
+}
+#image > img:last-child {
+  cursor: url('image/vector.png'), auto;	
+}
+#inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#inputs > input::-webkit-outer-spin-button,
+#inputs > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#inputs > input {
+  width: 49%;
+  height: 50px;
+  border-radius: 13px;
+  background: #646f9d;
+  border: none;
+  outline: none;
+  padding:0 2%;
+}
+::placeholder{
+  color: #ffffff2c;
+  text-align: center;
+  font-size: 12px;
+}
+#inputs > button {
+  margin-top: 5%;
+  border-radius: 10px;
+  background: #424669;
+  width: 35%;
+  height: 45px;
+  outline: none;
+  border: none;
+  color: #d6c9c9;
+  font-family: "Hey Comic";
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: -0.38px;
+  cursor: url('image/vector.png'), auto;	
+}
+
+/* style for progress */
+#rowProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  width: 10%;
+  gap: 15%;
+  cursor: url('image/cursor.png'), auto;	
+}
+#rowProgress > div {
+  margin-bottom: 15%;
+  width: 55%;
+  height: 200px;
+  background-color: #ea8d0b;
+  border-radius: 21px;
+}
+#rowProgress > div:last-child {
+  margin-bottom: 0;
+  background-color: #ea7953;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rowProgress > div > span {
+  color: #363636;
+  font-family: "Hey Comic";
+  font-size: 19px;
+  transform: rotate(90deg);
+  font-weight: 400;
+  display: block;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+#rowProgress > div:first-child {
+  background-color: #ea7953;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rowProgress > div:nth-child(2) {
+  background-color: #f7b078;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+#SvgDad {
+  position: relative;
+}
+.SvgDad {
+  display: none;
+}
+#svgChild {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 5%;
+  text-align: center;
+}
+#svgChild > h1 {
+  color: #ded6d6;
+  text-align: center;
+  font-family: "Hey Comic";
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15%;
+  letter-spacing: -0.44px;
+}
+#svgChild > img {
+  width: 350px;
+}
+
+/* overage woman */
+#overageDad {
+  position: relative;
+  display: none;
+}
+#overageChild {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 5%;
+  text-align: center;
+}
+#overageChild > h1 {
+  color: #ded6d6;
+  text-align: center;
+  font-family: "Hey Comic";
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15%;
+  letter-spacing: -0.44px;
+}
+#overageChild > img {
+  width: 294px;
+}
+/* style normal */
+#normalDad {
+  position: relative;
+  display: none;
+}
+#normalChild {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 5%;
+  text-align: center;
+}
+#normalChild > h1 {
+  color: #ded6d6;
+  text-align: center;
+  font-family: "Hey Comic";
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15%;
+  letter-spacing: -0.44px;
+}
+#normalChild > img {
+  width: 290px;
+  height: 300px;
+}
+
+/* style for tint woman */
+#tinyDad {
+  position: relative;
+  display: none;
+}
+#tinyChild {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 5%;
+  text-align: center;
+}
+#tinyChild > h1 {
+  color: #ded6d6;
+  text-align: center;
+  font-family: "Hey Comic";
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15%;
+  letter-spacing: -0.44px;
+}
+#tinyChild > img {
+  width: 290px;
+  height: 300px;
+}
+
+/* style for tiny men */
+#tinyMen {
+  position: relative;
+  display: none;
+}
+#tinyCMen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 5%;
+  text-align: center;
+}
+#tinyCMen > h1 {
+  color: #ded6d6;
+  text-align: center;
+  font-family: "Hey Comic";
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15%;
+  letter-spacing: -0.44px;
+}
+#tinyCMen > img {
+  width: 230px;
+  height: 250px;
+}
+
+/* normal men */
+#normalMen {
+  position: relative;
+  display: none;
+}
+#normalCMen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 5%;
+  text-align: center;
+}
+#normalCMen > h1 {
+  color: #ded6d6;
+  text-align: center;
+  font-family: "Hey Comic";
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15%;
+  letter-spacing: -0.44px;
+}
+#normalCMen > img {
+  width: 230px;
+  height: 250px;
+}
+/* style average men */
+#overMen {
+  position: relative;
+  display: none;
+}
+#overCMen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin-top: 5%;
+  text-align: center;
+}
+
+#overCMen > h1 {
+  color: #ded6d6;
+  text-align: center;
+  font-family: "Hey Comic";
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15%;
+  letter-spacing: -0.44px;
+}
+#overCMen > img {
+  width: 230px;
+  height: 250px;
+}

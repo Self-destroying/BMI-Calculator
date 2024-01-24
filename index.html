@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <!-- style link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon web" href="image/bmi-body-mass-index-word-vector-9715651.jpg">
+</head>
+
+<body>
+
+    <!-- background form -->
+    <div id="back">
+        <form action="">
+            <h1>BMI Calculator</h1>
+            <h3>choose your gender:</h3>
+            <div id="image">
+                <img class="gender" data-gender="male" src="image/Simplification.svg" alt="">
+                <img class="gender" data-gender="female" src="image/SimplificationFmail.svg" alt="">
+            </div>
+            <div id="inputs">
+                <input id="age" type="number" placeholder="Enter your age...">
+                <input id="weight" type="number" placeholder="Enter your Weight...">
+                <input id="height" type="number" placeholder="Enter your Height...">
+                <button id="button">Calculate</button>
+            </div>
+            <p id="result"></p>
+        </form>
+        <!-- blue default svg -->
+        <div class="svgDadNon" id="SvgDad">
+            <div id="svgChild">
+                <h1>Waiting for you to complete the form ...</h1>
+                <img src="image/e52d9fc7c4480100e935289580a94748.gif" alt="">
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="380" height="596" viewBox="0 0 380 596" fill="none">
+
+                <path
+                    d="M0 20L0 576C0 587.046 8.9543 596 20 596H360C371.046 596 380 587.046 380 576V312.94C380 309.338 379.027 305.803 377.184 302.708L365.982 283.894C361.626 276.579 362.378 267.309 367.857 260.792L375.309 251.927C378.339 248.323 380 243.765 380 239.057L380 20C380 8.95428 371.046 0 360 0H20C8.9543 0 0 8.95428 0 20Z"
+                    fill="#646F9D" />
+            </svg>
+        </div>
+        <!-- for overage dad woman-->
+        <div id="overageDad">
+            <div id="overageChild">
+                <img src="image/simplification.png" alt="">
+                <p id="result"></p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="422" height="596" viewBox="0 0 422 596" fill="none">
+                <path
+                    d="M0 26L0 570C0 584.359 11.6406 596 26 596H364.993C379.352 596 390.993 584.359 390.993 570V157.974C390.993 152.16 392.942 146.513 396.528 141.937L415.951 117.152C423.551 107.453 423.3 93.7513 415.349 84.3378L397.13 62.7659C393.167 58.074 390.993 52.1308 390.993 45.9893V26C390.993 11.6406 379.352 0 364.993 0H26C11.6406 0 0 11.6406 0 26Z"
+                    fill="#EA7953" />
+            </svg>
+        </div>
+        <!-- for normal dad woman-->
+        <div id="normalDad">
+            <div id="normalChild">
+                <img src="image/simplificationfit.png" alt="">
+                <p id="result"></p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="424" height="596" viewBox="0 0 424 596" fill="none">
+                <path
+                    d="M0 26L0 570C0 584.359 11.6406 596 26 596H364.993C379.352 596 390.993 584.359 390.993 570V380.711C390.993 375.058 392.835 369.559 396.241 365.047L418.7 335.294C425.92 325.729 425.668 312.469 418.088 303.186L396.853 277.178C393.063 272.535 390.993 266.727 390.993 260.734L390.993 26C390.993 11.6406 379.352 0 364.993 0H26C11.6406 0 0 11.6406 0 26Z"
+                    fill="#F7B078" />
+            </svg>
+        </div>
+        <!-- for tiny woman -->
+        <div id="tinyDad">
+            <div id="tinyChild">
+                <img src="image/simplificationtiny.png" alt="">
+                <p id="result"></p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="415" height="596" viewBox="0 0 415 596" fill="none">
+                <path
+                    d="M0 26L0 570C0 584.359 11.6406 596 26 596H364.993C379.352 596 390.993 584.359 390.993 570V548.764C390.993 543.699 392.473 538.743 395.25 534.507L409.876 512.202C416.18 502.589 415.422 489.976 408.012 481.187L397.115 468.261C393.161 463.572 390.993 457.636 390.993 451.503L390.993 26C390.993 11.6406 379.352 0 364.993 0H26C11.6406 0 0 11.6406 0 26Z"
+                    fill="#EA7953" />
+            </svg>
+        </div>
+
+        <!-- for tiny men -->
+        <div id="tinyMen">
+            <div id="tinyCMen">
+            <img src="image/simplificationmenTin.png" alt="">
+                <p id="result"></p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="415" height="596" viewBox="0 0 415 596" fill="none">
+                <path
+                    d="M0 26L0 570C0 584.359 11.6406 596 26 596H364.993C379.352 596 390.993 584.359 390.993 570V548.764C390.993 543.699 392.473 538.743 395.25 534.507L409.876 512.202C416.18 502.589 415.422 489.976 408.012 481.187L397.115 468.261C393.161 463.572 390.993 457.636 390.993 451.503L390.993 26C390.993 11.6406 379.352 0 364.993 0H26C11.6406 0 0 11.6406 0 26Z"
+                    fill="#EA7953" />
+            </svg>
+        </div>
+        <!-- for normal men -->
+        <div id="normalMen">
+            <div id="normalCMen">
+            <img src="image/simplificationfitmen.png" alt="">
+                <p id="result"></p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="424" height="596" viewBox="0 0 424 596" fill="none">
+                <path d="M0 26L0 570C0 584.359 11.6406 596 26 596H364.993C379.352 596 390.993 584.359 390.993 570V380.711C390.993 375.058 392.835 369.559 396.241 365.047L418.7 335.294C425.92 325.729 425.668 312.469 418.088 303.186L396.853 277.178C393.063 272.535 390.993 266.727 390.993 260.734L390.993 26C390.993 11.6406 379.352 0 364.993 0H26C11.6406 0 0 11.6406 0 26Z" fill="#F7B078"/>
+              </svg>
+        </div>
+        <!-- for overage men -->
+        <div id="overMen">
+            <div id="overCMen">
+            <img src="image/simplificationfatMen.png" alt="">
+                <p id="result"></p>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="422" height="596" viewBox="0 0 422 596" fill="none">
+                <path d="M0 26L0 570C0 584.359 11.6406 596 26 596H364.993C379.352 596 390.993 584.359 390.993 570V157.974C390.993 152.16 392.942 146.513 396.528 141.937L415.951 117.152C423.551 107.453 423.3 93.7513 415.349 84.3378L397.13 62.7659C393.167 58.074 390.993 52.1308 390.993 45.9893V26C390.993 11.6406 379.352 0 364.993 0H26C11.6406 0 0 11.6406 0 26Z" fill="#EA7953"/>
+              </svg>
+        </div>
+
+        <!-- progress bar -->
+
+        <div id="rowProgress">
+            <div id="progUp">
+                <span>average</span>
+            </div>
+            <div id="progBeet">
+                <span>medium</span>
+            </div>
+            <div id="progDown">
+                <span>Underweight</span>
+            </div>
+        </div>
+    </div>
+    <!-- background code -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- script link -->
+    <script src="script.js"></script>
+</body>
+
+</html>
