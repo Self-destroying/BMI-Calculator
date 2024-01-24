@@ -100,7 +100,7 @@ function bMI() {
       normalWoman.style.display = "none";
       overAgeWoman.style.display = "none";
       //  start fat man
-    } else if (bmiCalculate > 25 && bmiCalculate < 40) {
+    } else if (bmiCalculate > 25 && bmiCalculate < 100) {
       fatMan.style.display = "flex";
       defultB.style.display = "none";
       // add p to html card
