@@ -13,40 +13,40 @@ let defultB = document.getElementById("SvgDad");
 // tiny woman
 let tinWoman = document.getElementById("tinyDad");
 // tiny child woman
-let tintChildWoman = document.getElementById("tinyChild");
+let tintChildWoman = document.querySelector("#tinyChild #result");
 // normal woman
 let normalWoman = document.getElementById("normalDad");
 // normal child woman
-let normalChildWoman = document.getElementById("normalChild");
+let normalChildWoman = document.querySelector("#normalChild #result1");
 // fat woman
 let overAgeWoman = document.getElementById("overageDad");
 // fat woman child
-let fatChildWoman = document.getElementById("overageChild");
+let fatChildWoman = document.querySelector("#overageChild #result5");
 // tiny man
 let tinyman = document.getElementById("tinyMen");
 // tiny man child
-let childManTiny = document.getElementById("tinyCMen");
+let childManTiny = document.querySelector("#tinyCMen #result2");
 // normal man
 let normalMan = document.getElementById("normalMen");
 // normal child man
-let childManNormal = document.getElementById("normalCMen");
+let childManNormal = document.querySelector("#normalCMen #result3");
 // fat man
 let fatMan = document.getElementById("overMen");
 // fat man child
-let childManFat = document.getElementById("overCMen");
+let childManFat = document.querySelector("#overCMen #result4");
 // select result in html
-let p = document.getElementById("result");
+// let p = document.getElementById("result");
 // global gender value
 let fmGender;
 // not access for default act
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
-// define event click for button 
+// define event click for button
 button.addEventListener("click", bMI);
 // function calculate
 function bMI() {
-  // calculate BMI 
+  // calculate BMI
   let ages = +ageValue.value;
   let weights = +weightValue.value;
   let heights = +heightValue.value;
@@ -64,6 +64,7 @@ function bMI() {
       defultB.style.display = "none";
       normalMan.style.display = "flex";
       // add p to html card
+      childManNormal.innerHTML = "";
       childManNormal.innerHTML += `<strong style= 'color: #ded6d6;
       text-align: center;
       font-family: "Hey Comic";
@@ -83,6 +84,7 @@ function bMI() {
     } else if (bmiCalculate <= 16 && bmiCalculate < 18.5) {
       tinyman.style.display = "flex";
       // add p to html card
+      childManTiny.innerHTML = "";
       childManTiny.innerHTML += `<strong style= 'color: #ded6d6;
       text-align: center;
       font-family: "Hey Comic";
@@ -104,6 +106,7 @@ function bMI() {
       fatMan.style.display = "flex";
       defultB.style.display = "none";
       // add p to html card
+      childManFat.innerHTML = "";
       childManFat.innerHTML += `<strong style= 'color: #ded6d6;
       text-align: center;
       font-family: "Hey Comic";
@@ -134,6 +137,7 @@ function bMI() {
       fatMan.style.display = "none";
       defultB.style.display = "none";
       // add p in html
+      normalChildWoman.innerHTML = "";
       normalChildWoman.innerHTML += `<strong style= 'color: #ded6d6;
       text-align: center;
       font-family: "Hey Comic";
@@ -152,6 +156,7 @@ function bMI() {
       tinyman.style.display = "none";
       normalMan.style.display = "none";
       fatMan.style.display = "none";
+      tintChildWoman.innerHTML = "";
       tintChildWoman.innerHTML += `<strong style= 'color: #ded6d6;
       text-align: center;
       font-family: "Hey Comic";
@@ -159,7 +164,9 @@ function bMI() {
       <br>
        ${bmiCalculate.toFixed(2)}</strong>
       <strong style='color: #ded6d6;text-align: center;
-      font-family: "Hey Comic";font-size: 30px;'>your age is: ${ages}</strong>`;
+      font-family: "Hey Comic";font-size: 30px;'>your age is:
+      <br>
+      ${ages}</strong>`;
     } else if (bmiCalculate >= 25 && bmiCalculate <= 180) {
       overAgeWoman.style.display = "flex";
       // remove another card
@@ -170,6 +177,7 @@ function bMI() {
       tinyman.style.display = "none";
       normalMan.style.display = "none";
       fatMan.style.display = "none";
+      fatChildWoman.innerHTML = "";
       fatChildWoman.innerHTML += `<strong style= 'color: #ded6d6;
       text-align: center;
       font-family: "Hey Comic";
